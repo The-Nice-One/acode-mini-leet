@@ -1,4 +1,3 @@
-import styles from "./style.module.css";
 import plugin from "../plugin.json";
 import { searchLeetCodeProblems } from "./fetch";
 import { renderResults } from "./render";
@@ -12,8 +11,13 @@ class AcodePlugin {
     cacheFile: Acode.FileSystem,
     cacheFileUrl: string,
   ): Promise<void> {
+    acode.addIcon(
+      "mini-leet-icon",
+      "https://raw.githubusercontent.com/The-Nice-One/acode-mini-leet/refs/heads/main/res/leetcode-stroke-rounded.svg",
+      { monochrome: true },
+    );
     sideBarApps.add(
-      "icon_class",
+      "mini-leet-icon",
       "mini-leet-sidebar-app",
       "Mini Leet",
       (container) => {
