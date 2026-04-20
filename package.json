@@ -1,0 +1,29 @@
+{
+  "name": "mini_leet",
+  "version": "0.0.1",
+  "description": "Open LeetCode problems in Acode.",
+  "main": "dist/main.js",
+  "repository": "https://github.com/The-Nice-One/acode-mini-leet.git",
+  "author": "The-Nice-One",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "acode-plugin-types": "^1.11.7-patch.2",
+    "html-tag-js": "^1.8.2"
+  },
+  "devDependencies": {
+    "jszip": "^3.10.1",
+    "typescript": "^5.7.2",
+    "vite": "^8.0.8"
+  },
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build"
+  },
+  "browserslist": [
+    "> 0.25%, not dead"
+  ],
+  "resolutions": {
+    "terser": ">=5.14.2 ",
+    "glob-parent": ">=5.1.2"
+  }
+}
